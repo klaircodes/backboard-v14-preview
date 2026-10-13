@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/backboard-v14-preview/favicon.svg" />
+    <meta name="description" content="One key. Memory, 17,000+ models, RAG and threads." />
+    <title>Start with the Unified API | Backboard</title>
+    <script type="module" crossorigin src="/backboard-v14-preview/assets/main-TC5nqK5J.js"></script>
+    <link rel="stylesheet" crossorigin href="/backboard-v14-preview/assets/main-D1FhpL68.css">
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="mark" href="/backboard-v14-preview/"><img data-emblem alt="Backboard home" width="146" height="18" /></a>
+      <nav class="top-nav" aria-label="Primary">
+        <a href="/backboard-v14-preview/research/">Research</a>
+      </nav>
+      <div class="build">
+        <button class="build-btn" type="button" aria-expanded="false" aria-controls="build-menu">Build</button>
+        <div class="build-menu" id="build-menu" hidden>
+          <div class="build-group">
+            <p class="build-label" id="bg-start">Start building</p>
+            <ul aria-labelledby="bg-start">
+              <li><a href="#" data-placeholder="Unified API site" aria-describedby="build-ph"><span class="bi-name">Unified API <span class="out" aria-hidden="true">↗</span></span><span class="bi-line">One API for memory, models and tools.</span></a></li>
+              <li><a href="#" data-placeholder="Backboard Studio site" aria-describedby="build-ph"><span class="bi-name">Backboard Studio <span class="out" aria-hidden="true">↗</span></span><span class="bi-line">The desktop IDE, with everything built in.</span></a></li>
+              <li><a href="#" data-placeholder="R-CLI site" aria-describedby="build-ph"><span class="bi-name">R-CLI <span class="out" aria-hidden="true">↗</span></span><span class="bi-line">Open-source coding harness for the terminal.</span></a></li>
+            </ul>
+          </div>
+          <div class="build-group">
+            <p class="build-label" id="bg-teams">For teams</p>
+            <ul aria-labelledby="bg-teams">
+              <li><span class="bi-held"><span class="bi-name">Capsules</span><span class="bi-line">Your own model, deployed in your own cloud.</span></span></li>
+              <li><span class="bi-held"><span class="bi-name">Inference engine</span><span class="bi-line">More answers from the same GPUs. Research preview.</span></span></li>
+            </ul>
+          </div>
+          <p class="bm-ph" id="build-ph">Placeholder links. Each product will link out to its own site once the addresses are confirmed.</p>
+        </div>
+      </div>
+    </header>
+
+    <nav class="crumb" aria-label="Back"><a href="/backboard-v14-preview/start/" data-back>All paths</a></nav>
+    <section id="main" class="page-head">
+      <h1>Start with the <em>Unified API</em></h1>
+      <p class="sub">One key. Memory, 17,000+ models, RAG and threads.</p>
+    </section>
+    <figure class="video page-visual">
+      <div class="video-frame yt" data-yt="vtt0N5qENW8">
+        <img src="https://i.ytimg.com/vi/vtt0N5qENW8/hqdefault.jpg" alt="" loading="lazy" />
+        <button class="sound yt-play" type="button" aria-label="Play: Backboard.io Unified API: full platform walkthrough">Play the intro</button>
+      </div>
+      <figcaption>Backboard.io Unified API: full platform walkthrough</figcaption>
+    </figure>
+    <section class="section narrow">
+      <h2>Four steps</h2>
+      <ol class="steps">
+        <li class="step"><h3>Create your account</h3><p>Free to start, no credit card required.</p><p><a class="btn primary" href="https://app.backboard.io/signup?path=api">Create your free account</a></p></li>
+        <li class="step"><h3>Create an API key</h3><p>In the dashboard at app.backboard.io, open Settings, then API Keys, and create a key.</p></li>
+        <li class="step"><h3>Install the SDK</h3><code class="code">pip install backboard-sdk <span class="muted"># or: npm install backboard-sdk</span></code></li>
+        <li class="step"><h3>Send your first request</h3><code class="code">from backboard import BackboardClient<br /><br />client = BackboardClient(api_key="YOUR_API_KEY")<br />response = await client.send_message(<br />&nbsp;&nbsp;"What is the capital of France?",<br />&nbsp;&nbsp;llm_provider="openrouter",<br />&nbsp;&nbsp;model_name="moonshotai/kimi-k2.6",<br />&nbsp;&nbsp;stream=False,<br />)</code><p>A thread and assistant are created for you.</p></li>
+      </ol>
+      <p class="section-note">The full walkthrough is in the <a href="https://docs.backboard.io/quickstart">quickstart</a>. More on the <a href="/backboard-v14-preview/products/api/">API page</a>.</p>
+    </section>
+    <footer id="footer">
+      <div class="foot">
+        <div class="foot-brand">
+          <img data-emblem alt="Backboard" width="130" height="16" />
+          <span>Ottawa, Canada</span>
+        </div>
+        <nav class="foot-links" aria-label="Footer">
+          <a href="https://trust.backboard.io/">Trust Center</a>
+          <a href="/backboard-v14-preview/trust/">Security</a>
+          <a href="/backboard-v14-preview/privacy/">Privacy</a>
+          <a href="/backboard-v14-preview/terms/">Terms</a>
+          <a href="https://status.backboard.io/status/s">Status</a>
+          <a href="/backboard-v14-preview/careers/">Careers</a>
+          <a href="/backboard-v14-preview/contact/">Contact</a>
+          <a href="https://github.com/backboard-io">GitHub</a>
+          <a href="https://x.com/BackboardIO">X</a>
+          <a href="https://www.linkedin.com/company/backboard-io">LinkedIn</a>
+        </nav>
+      </div>
+    </footer>
+
+  </body>
+</html>

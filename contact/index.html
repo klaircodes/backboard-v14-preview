@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/backboard-v14-preview/favicon.svg" />
+    <meta name="description" content="Get in touch with Backboard, or book a demo." />
+    <title>Contact | Backboard</title>
+    <script type="module" crossorigin src="/backboard-v14-preview/assets/main-TC5nqK5J.js"></script>
+    <link rel="stylesheet" crossorigin href="/backboard-v14-preview/assets/main-D1FhpL68.css">
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="mark" href="/backboard-v14-preview/"><img data-emblem alt="Backboard home" width="146" height="18" /></a>
+      <nav class="top-nav" aria-label="Primary">
+        <a href="/backboard-v14-preview/research/">Research</a>
+      </nav>
+      <div class="build">
+        <button class="build-btn" type="button" aria-expanded="false" aria-controls="build-menu">Build</button>
+        <div class="build-menu" id="build-menu" hidden>
+          <div class="build-group">
+            <p class="build-label" id="bg-start">Start building</p>
+            <ul aria-labelledby="bg-start">
+              <li><a href="#" data-placeholder="Unified API site" aria-describedby="build-ph"><span class="bi-name">Unified API <span class="out" aria-hidden="true">↗</span></span><span class="bi-line">One API for memory, models and tools.</span></a></li>
+              <li><a href="#" data-placeholder="Backboard Studio site" aria-describedby="build-ph"><span class="bi-name">Backboard Studio <span class="out" aria-hidden="true">↗</span></span><span class="bi-line">The desktop IDE, with everything built in.</span></a></li>
+              <li><a href="#" data-placeholder="R-CLI site" aria-describedby="build-ph"><span class="bi-name">R-CLI <span class="out" aria-hidden="true">↗</span></span><span class="bi-line">Open-source coding harness for the terminal.</span></a></li>
+            </ul>
+          </div>
+          <div class="build-group">
+            <p class="build-label" id="bg-teams">For teams</p>
+            <ul aria-labelledby="bg-teams">
+              <li><span class="bi-held"><span class="bi-name">Capsules</span><span class="bi-line">Your own model, deployed in your own cloud.</span></span></li>
+              <li><span class="bi-held"><span class="bi-name">Inference engine</span><span class="bi-line">More answers from the same GPUs. Research preview.</span></span></li>
+            </ul>
+          </div>
+          <p class="bm-ph" id="build-ph">Placeholder links. Each product will link out to its own site once the addresses are confirmed.</p>
+        </div>
+      </div>
+    </header>
+
+    <nav class="crumb" aria-label="Back"><a href="/backboard-v14-preview/" data-back>Home</a></nav>
+    <section class="page-head">
+      <h1>Get in <em>touch</em></h1>
+      <p class="sub">We would love to hear from you. Reach out and let’s start a conversation.</p>
+      <div class="actions">
+        <a class="link-chev" href="#demo">Book a demo</a>
+        <a class="link-chev" href="#message">Send a message</a>
+      </div>
+    </section>
+    <main id="main">
+      <article class="content">
+        <div class="para">
+          <figure class="plate plate-note" data-src="/backboard-v14-preview/img/work-memory.jpg" data-pos="0.5 0.4" data-contrast="1.5" data-level="0.04">
+            <div class="plate-frame"></div>
+            <figcaption><span class="fig">Fig. 1</span> Every message is read.</figcaption>
+          </figure>
+          <h2 id="demo" class="first">Book a demo</h2>
+          <p>Tell us what you are trying to solve and where it needs to run. We will come back to you to set up a time.</p>
+        </div>
+        <form class="form" id="demo-form" data-mailto="hello@backboard.io" data-subject="Demo request">
+          <div class="field"><label for="f-d-name">Name</label><input id="f-d-name" name="Name" type="text" required autocomplete="name" /></div>
+          <div class="field"><label for="f-d-title">Job title <span class="opt">optional</span></label><input id="f-d-title" name="Job title" type="text" autocomplete="organization-title" /></div>
+          <div class="field"><label for="f-d-email">Company email</label><input id="f-d-email" name="Company email" type="email" required autocomplete="email" /></div>
+          <div class="field"><label for="f-d-company">Company name</label><input id="f-d-company" name="Company name" type="text" required autocomplete="organization" /></div>
+          <div class="field wide"><label for="f-d-deploy">Deployment interest</label><select id="f-d-deploy" name="Deployment interest" required><option value="" disabled selected>Choose one</option><option>Your cloud (AWS, GCP, Azure)</option><option>On-prem</option><option>Air-gapped</option><option>Not sure yet</option></select></div>
+          <div class="field wide"><label for="f-d-solve">What are you trying to solve?</label><textarea id="f-d-solve" name="What are you trying to solve?" rows="5" required></textarea></div>
+          <div class="form-foot">
+            <button class="btn primary" type="submit">Request a demo</button>
+          </div>
+          <p class="form-done" role="status" hidden>Thanks, it’s in. The team reads every message and will reply to the email you gave.</p>
+          <p class="form-fail" role="alert" hidden>That didn’t send. Please try again, or write to <a href="mailto:hello@backboard.io">hello@backboard.io</a>.</p>
+          <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        </form>
+        <h2 id="message">Send a message</h2>
+        <form class="form" id="msg-form" data-mailto="hello@backboard.io" data-subject="Hello">
+          <div class="field"><label for="f-m-name">Name</label><input id="f-m-name" name="Name" type="text" required autocomplete="name" /></div>
+          <div class="field"><label for="f-m-email">Email</label><input id="f-m-email" name="Email" type="email" required autocomplete="email" /></div>
+          <div class="field wide"><label for="f-m-msg">Message</label><textarea id="f-m-msg" name="Message" rows="5" required></textarea></div>
+          <div class="form-foot">
+            <button class="btn primary" type="submit">Send message</button>
+          </div>
+          <p class="form-done" role="status" hidden>Thanks, it’s in. The team reads every message and will reply to the email you gave.</p>
+          <p class="form-fail" role="alert" hidden>That didn’t send. Please try again, or write to <a href="mailto:hello@backboard.io">hello@backboard.io</a>.</p>
+          <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        </form>
+        <h2>Elsewhere</h2>
+        <ul class="rows">
+          <li><span>General</span><span class="val"><a href="mailto:hello@backboard.io">hello@backboard.io</a></span></li>
+          <li><span>Nash for teams</span><span class="val"><a href="mailto:sales@hellonash.ai">sales@hellonash.ai</a></span></li>
+          <li><span>Developers</span><span class="val"><a href="https://docs.backboard.io">Documentation</a> · <a href="https://github.com/backboard-io">GitHub</a></span></li>
+          <li><span>Service status</span><span class="val"><a href="/backboard-v14-preview/status/">Status</a></span></li>
+          <li><span>Security</span><span class="val"><a href="/backboard-v14-preview/trust/">Trust center</a></span></li>
+          <li><span>Office</span><span class="val">Ottawa, Ontario, Canada</span></li>
+          <li><span>Social</span><span class="val"><a href="https://x.com/BackboardIO">X</a> · <a href="https://www.linkedin.com/company/backboard-io">LinkedIn</a> · <a href="https://www.youtube.com/@backboardio/featured">YouTube</a> · <a href="https://www.instagram.com/backboard.io/">Instagram</a></span></li>
+        </ul>
+      </article>
+    </main>
+    <footer id="footer">
+      <div class="foot">
+        <div class="foot-brand">
+          <img data-emblem alt="Backboard" width="130" height="16" />
+          <span>Ottawa, Canada</span>
+        </div>
+        <nav class="foot-links" aria-label="Footer">
+          <a href="https://trust.backboard.io/">Trust Center</a>
+          <a href="/backboard-v14-preview/trust/">Security</a>
+          <a href="/backboard-v14-preview/privacy/">Privacy</a>
+          <a href="/backboard-v14-preview/terms/">Terms</a>
+          <a href="https://status.backboard.io/status/s">Status</a>
+          <a href="/backboard-v14-preview/careers/">Careers</a>
+          <a href="/backboard-v14-preview/contact/">Contact</a>
+          <a href="https://github.com/backboard-io">GitHub</a>
+          <a href="https://x.com/BackboardIO">X</a>
+          <a href="https://www.linkedin.com/company/backboard-io">LinkedIn</a>
+        </nav>
+      </div>
+    </footer>
+
+  </body>
+</html>

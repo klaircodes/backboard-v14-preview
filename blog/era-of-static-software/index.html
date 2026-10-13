@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/backboard-v14-preview/favicon.svg" />
+    <meta name="description" content="Software is shifting from fixed instructions to systems that observe, adapt, and improve after deployment. What comes next." />
+    <title>The Era of Static Software Is Ending | Backboard</title>
+    <script type="module" crossorigin src="/backboard-v14-preview/assets/main-TC5nqK5J.js"></script>
+    <link rel="stylesheet" crossorigin href="/backboard-v14-preview/assets/main-D1FhpL68.css">
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="mark" href="/backboard-v14-preview/"><img data-emblem alt="Backboard home" width="146" height="18" /></a>
+      <nav class="top-nav" aria-label="Primary">
+        <a href="/backboard-v14-preview/research/">Research</a>
+      </nav>
+      <div class="build">
+        <button class="build-btn" type="button" aria-expanded="false" aria-controls="build-menu">Build</button>
+        <div class="build-menu" id="build-menu" hidden>
+          <div class="build-group">
+            <p class="build-label" id="bg-start">Start building</p>
+            <ul aria-labelledby="bg-start">
+              <li><a href="#" data-placeholder="Unified API site" aria-describedby="build-ph"><span class="bi-name">Unified API <span class="out" aria-hidden="true">↗</span></span><span class="bi-line">One API for memory, models and tools.</span></a></li>
+              <li><a href="#" data-placeholder="Backboard Studio site" aria-describedby="build-ph"><span class="bi-name">Backboard Studio <span class="out" aria-hidden="true">↗</span></span><span class="bi-line">The desktop IDE, with everything built in.</span></a></li>
+              <li><a href="#" data-placeholder="R-CLI site" aria-describedby="build-ph"><span class="bi-name">R-CLI <span class="out" aria-hidden="true">↗</span></span><span class="bi-line">Open-source coding harness for the terminal.</span></a></li>
+            </ul>
+          </div>
+          <div class="build-group">
+            <p class="build-label" id="bg-teams">For teams</p>
+            <ul aria-labelledby="bg-teams">
+              <li><span class="bi-held"><span class="bi-name">Capsules</span><span class="bi-line">Your own model, deployed in your own cloud.</span></span></li>
+              <li><span class="bi-held"><span class="bi-name">Inference engine</span><span class="bi-line">More answers from the same GPUs. Research preview.</span></span></li>
+            </ul>
+          </div>
+          <p class="bm-ph" id="build-ph">Placeholder links. Each product will link out to its own site once the addresses are confirmed.</p>
+        </div>
+      </div>
+    </header>
+
+    <nav class="crumb" aria-label="Back"><a href="/backboard-v14-preview/blog/" data-back>Blog</a></nav>
+    <header class="article-head">
+      <p class="article-meta">Sep 15, 2026 · Rob Imbeault</p>
+      <h1>The Era of Static Software Is Ending</h1>
+      <p class="article-dek">Software used to be something we built. Increasingly, it may become something we grow.</p>
+    </header>
+    <main id="main">
+      <article class="content article">
+<p>When I was 14, I learned to code on a RadioShack TRS-80. It sat in my father’s office den, surrounded by books, with a giant old-world map covering one wall. He smoked in that room, which seems completely insane now, but memory is funny that way. I can still smell the cigarette smoke when I think about that computer. In one of my Dad’s magazine collections, I found the source code for a game, all 800 lines of it, and so I sat there re-keying the entire thing by hand. The language was BASIC, and programming was literal. You told the computer what to do one instruction at a time. Go here, do this, check that, and if this happens, jump to another line. If you made a mistake somewhere, good luck finding it. There was no helpful little red underline telling you where you screwed up.</p>
+<p>As programs became more complicated, those instructions started crossing over each other in ways that became increasingly difficult to understand. You would have loops calling other loops, sections of the program jumping into completely different sections, and code that technically worked but was almost impossible to come back to later and understand. This was affectionately known as spaghetti code.</p>
+<p>Object-oriented programming was one of those enormous shifts. Instead of telling the computer exactly what to do every single time, we began creating reusable objects with defined responsibilities. You could create a function or a class that knew how to perform a certain job, pass it some parameters, and expect a deterministic result. That sounds obvious now because it became the way most modern software was built, but at the time it was a completely different way of thinking. You were no longer just writing instructions. You were designing systems made up of components that each knew how to do something specific.</p>
+<p>That made software much easier to organize, reuse, and scale, but there was still an important limitation. The software itself could not really improve. It could run forever, process millions of requests, and sit at the centre of a huge business, but if the environment changed or customers started using it differently, a human still had to come back and change it. Someone had to understand the problem, modify the code, test it, make sure the new version did not break everything that came before it, and then deploy another release. Basically, software could do an enormous amount of work, but it still needed us to come back every time it needed to get smarter. The software was dynamic in execution, but static in intelligence.</p>
+<p>I think that may be starting to change.</p>
+<p>We are already seeing small examples of this in my team. One of the systems we built is a self-healing vector database. A vector database is essentially a system designed to store and retrieve information based on meaning instead of just exact matches, and it is one of the foundational pieces behind a lot of modern AI systems. Traditionally, these systems are tuned by engineers. Someone decides how the information should be organized, how retrieval should work, how much context should come back, and what should happen when performance starts to degrade. When reality does not match those assumptions, an engineer has to step in and fix it.</p>
+<p>Our approach was different. We wanted the database to observe how it was actually being used and adjust itself based on what was happening. If certain retrieval patterns were producing poor results, it could detect that. If the way information was being organized was creating inefficiencies, it could adapt. If the usage pattern changed over time, the system did not necessarily have to wait for an engineer to notice. It could begin responding to those changes itself.</p>
+<p>That may sound like a small thing, and today it still is, but I think it points toward something much bigger. For most of the history of software, we have treated a deployed program as finished intelligence. We write the logic, test it, ship it, and then the software executes what we gave it until a human decides to make another change. But what happens when software can observe its own performance, compare the outcome it produced with the outcome we wanted, change its own behaviour, test that change, and determine whether it actually got better? At that point, we are no longer just giving software instructions. We are giving it objectives.</p>
+<p>That may be the third major shift in programming. The first generation was basically: do these exact steps. The next generation became: here are the components, their responsibilities, and how they interact. The emerging generation may become: here is the outcome I want, here are the boundaries, and here is how you know whether you are getting better. The abstraction keeps moving upward, from instructions to objects to objectives.</p>
+<p>If that continues, it changes the way we think about software itself. For most of software history, we have thought in versions. Version 1.0, version 1.1, version 2.0. A team builds something, tests it, ships it, watches what happens, and then decides what to change in the next release. That model assumes the software is basically static between releases. It may be processing millions of requests and reacting to countless inputs, but its underlying intelligence is still frozen. It only changes when we change it.</p>
+<p>Adaptive software starts to challenge that assumption. If a system can observe how it is being used, identify where it is underperforming, generate a better approach, test that approach, and keep the improvement, then deployment stops being the end of the development cycle. It becomes the beginning of one. That is a strange idea if you grew up thinking about software as something you build, ship, and then immediately start working on the next version of.</p>
+<p>The closest analogy I can think of is the difference between manufacturing a machine and growing a garden. You manufacture a machine to a specification, and once it leaves the factory you expect it to behave exactly as designed. A garden is different. You still design it. You decide what gets planted and where the boundaries are. You control the environment as much as you can. But once it starts growing, the system changes. You observe it, prune it, correct it, and encourage what is working. What you end up with is shaped partly by your original design and partly by what happened after you started.</p>
+<p>Software may be moving in that direction, although obviously not all software should. There are plenty of places where we absolutely want deterministic behaviour. I do not want my payroll system experimenting with new interpretations of tax rules. I do not want authentication software deciding that the definition of “authorized” could use some creativity. And I definitely do not want an aircraft control system trying something new because it noticed an interesting pattern. Determinism still matters, and if anything, it may matter even more as other parts of software become adaptive.</p>
+<p>That may lead to a very different kind of software architecture: a deterministic core surrounded by adaptive systems. The core defines the rules, permissions, safety boundaries, and truths that must remain stable. Around that, adaptive systems can learn how to operate more effectively within those constraints. That is where I think this gets really interesting, because once software is allowed to improve itself inside defined boundaries, the job of the programmer starts to change again.</p>
+<p>The question is no longer only whether we wrote the correct instructions. It becomes whether we created a system that knows what good looks like, knows what it is allowed to change, and can prove that it actually got better. What is the system trying to optimize for? What must remain fixed? How does it know whether a change improved the outcome or made it worse? How does it recover when it gets something wrong? And maybe most importantly, who decides what “better” actually means?</p>
+<p>I do not think the conclusion is that programmers disappear. I think the job moves up another layer. When I was 14, programming meant telling the computer exactly what to do. Later, it became about designing reusable systems and abstractions. Now it may increasingly be about defining goals, constraints, evaluation criteria, and feedback loops. The programmer becomes less responsible for specifying every action and more responsible for designing the environment in which useful behaviour can emerge safely.</p>
+<p>That brings me back to the garden analogy. We have spent most of the history of software manufacturing things. We design them, build them, test them, and ship them. The next generation of software may look more like something we cultivate. We still design the system and establish the boundaries, but after deployment, the software begins responding to its environment. It learns from how it is used, it adjusts, and in some cases it improves. The job is no longer simply to build the perfect thing before it ships. The job becomes building something capable of becoming better after it ships.</p>
+<p>When I sat in my father’s den typing 800 lines of BASIC into a TRS-80, every bit of intelligence in that program came from whoever had written those lines before me. The computer just followed along. Forty years later, we are beginning to build systems that can participate in their own improvement. That feels like a much bigger shift than AI writing code for us. It may be a shift in what software actually is.</p>
+<p>Software used to be something we built. Increasingly, it may become something we grow.</p>
+<p><strong>What strikes me now is that almost the entire history of software development since then can be understood as trying to move humans further away from having to describe every individual step.</strong></p>
+      </article>
+      <nav class="article-foot"><a class="link-chev" href="/backboard-v14-preview/blog/">All blog</a></nav>
+    </main>
+    <footer id="footer">
+      <div class="foot">
+        <div class="foot-brand">
+          <img data-emblem alt="Backboard" width="130" height="16" />
+          <span>Ottawa, Canada</span>
+        </div>
+        <nav class="foot-links" aria-label="Footer">
+          <a href="https://trust.backboard.io/">Trust Center</a>
+          <a href="/backboard-v14-preview/trust/">Security</a>
+          <a href="/backboard-v14-preview/privacy/">Privacy</a>
+          <a href="/backboard-v14-preview/terms/">Terms</a>
+          <a href="https://status.backboard.io/status/s">Status</a>
+          <a href="/backboard-v14-preview/careers/">Careers</a>
+          <a href="/backboard-v14-preview/contact/">Contact</a>
+          <a href="https://github.com/backboard-io">GitHub</a>
+          <a href="https://x.com/BackboardIO">X</a>
+          <a href="https://www.linkedin.com/company/backboard-io">LinkedIn</a>
+        </nav>
+      </div>
+    </footer>
+
+  </body>
+</html>

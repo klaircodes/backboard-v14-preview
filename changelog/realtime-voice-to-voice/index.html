@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/backboard-v14-preview/favicon.svg" />
+    <meta name="description" content="Backboard now supports real-time voice-to-voice conversations." />
+    <title>Real-time Voice-to-Voice Is Here | Backboard</title>
+    <script type="module" crossorigin src="/backboard-v14-preview/assets/main-TC5nqK5J.js"></script>
+    <link rel="stylesheet" crossorigin href="/backboard-v14-preview/assets/main-D1FhpL68.css">
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="mark" href="/backboard-v14-preview/"><img data-emblem alt="Backboard home" width="146" height="18" /></a>
+      <nav class="top-nav" aria-label="Primary">
+        <a href="/backboard-v14-preview/research/">Research</a>
+      </nav>
+      <div class="build">
+        <button class="build-btn" type="button" aria-expanded="false" aria-controls="build-menu">Build</button>
+        <div class="build-menu" id="build-menu" hidden>
+          <div class="build-group">
+            <p class="build-label" id="bg-start">Start building</p>
+            <ul aria-labelledby="bg-start">
+              <li><a href="#" data-placeholder="Unified API site" aria-describedby="build-ph"><span class="bi-name">Unified API <span class="out" aria-hidden="true">↗</span></span><span class="bi-line">One API for memory, models and tools.</span></a></li>
+              <li><a href="#" data-placeholder="Backboard Studio site" aria-describedby="build-ph"><span class="bi-name">Backboard Studio <span class="out" aria-hidden="true">↗</span></span><span class="bi-line">The desktop IDE, with everything built in.</span></a></li>
+              <li><a href="#" data-placeholder="R-CLI site" aria-describedby="build-ph"><span class="bi-name">R-CLI <span class="out" aria-hidden="true">↗</span></span><span class="bi-line">Open-source coding harness for the terminal.</span></a></li>
+            </ul>
+          </div>
+          <div class="build-group">
+            <p class="build-label" id="bg-teams">For teams</p>
+            <ul aria-labelledby="bg-teams">
+              <li><span class="bi-held"><span class="bi-name">Capsules</span><span class="bi-line">Your own model, deployed in your own cloud.</span></span></li>
+              <li><span class="bi-held"><span class="bi-name">Inference engine</span><span class="bi-line">More answers from the same GPUs. Research preview.</span></span></li>
+            </ul>
+          </div>
+          <p class="bm-ph" id="build-ph">Placeholder links. Each product will link out to its own site once the addresses are confirmed.</p>
+        </div>
+      </div>
+    </header>
+
+    <nav class="crumb" aria-label="Back"><a href="/backboard-v14-preview/blog/#changelog" data-back>Changelog</a></nav>
+    <header class="article-head">
+      <p class="article-meta">Sep 17, 2026 · Backboard Team</p>
+      <h1>Real-time Voice-to-Voice Is Here</h1>
+      <p class="article-dek">Backboard now supports real-time voice-to-voice conversations.</p>
+    </header>
+    <main id="main">
+      <article class="content article">
+<p>You can stream microphone audio into an assistant and receive spoken responses over a single WebSocket connection, without wiring together separate speech-to-text, LLM, and text-to-speech services yourself.</p>
+<p>Voice is now another interface your agents can use, with the same Backboard infrastructure for memory, tools, and persistent conversation state.</p>
+<h2><strong>Native Speech-to-Speech Conversations</strong></h2>
+<p>Connect a microphone stream and receive spoken responses in realtime.</p>
+<p>Backboard handles voice interaction over a single WebSocket connection, so you don't need to build and maintain separate STT, LLM, and TTS pipelines.</p>
+<h2><strong>Choose Your Voice Model</strong></h2>
+<p>Real-time voice is available across supported models from:</p>
+<ul><li><p>OpenAI Realtime</p></li><li><p>Google Gemini Live</p></li><li><p>xAI Grok Voice</p></li></ul>
+<p>Choose the provider and model that fit your application.</p>
+<h2><strong>Natural Conversation Flow</strong></h2>
+<p>Voice conversations support the interaction patterns people expect from a realtime conversation, including:</p>
+<ul><li><p>Streaming audio playback</p></li><li><p>Live transcripts</p></li><li><p>Automatic turn detection</p></li><li><p>Manual turns</p></li><li><p>Interruptions</p></li></ul>
+<p>This lets users speak naturally rather than waiting for each interaction to fully finish before starting the next one.</p>
+<h2><strong>Configure the Voice Experience</strong></h2>
+<p>You can configure supported provider options such as voice, instructions, speech settings, and turn detection.</p>
+<p>Backboard passes those settings through based on what the selected provider and model support.</p>
+<h2><strong>Start a Conversation Instantly</strong></h2>
+<p>You can start a realtime conversation without manually creating an assistant or thread first.</p>
+<p>Backboard can create them automatically when they are omitted.</p>
+<p>You can also reuse an existing thread to continue its saved conversation or reuse an assistant to carry configuration and memory across conversations.</p>
+<h2><strong>Conversations Persist</strong></h2>
+<p>Real-time conversations are not limited to the live session.</p>
+<p>Final transcripts and tool results are saved to the thread, so you can return to the conversation later.</p>
+<p>You can even resume with a different supported provider or model while keeping the conversation history.</p>
+<h2><strong>Voice Agents Can Use Tools</strong></h2>
+<p>Real-time voice conversations can also use tools.</p>
+<p>That includes your own custom function tools as well as Backboard-hosted capabilities such as:</p>
+<ul><li><p>Persistent memory</p></li><li><p>Web search</p></li><li><p>Image generation</p></li><li><p>Video generation</p></li></ul>
+<p>This means a voice interface can do more than answer questions. It can take actions and use the same capabilities available to your other Backboard agents.</p>
+<h2><strong>Python and JavaScript SDKs</strong></h2>
+<p>The latest SDKs include helpers for realtime connections:</p>
+<p><strong>Python:</strong> <code>connect_realtime<br/></code><strong>JavaScript:</strong> <code>connectRealtime</code></p>
+<p>These helpers handle streaming audio, real-time events, and returning tool results.</p>
+<h2><strong>Voice in the Playground</strong></h2>
+<p>You can now test realtime voice directly in the Backboard dashboard.</p>
+<p>Start a microphone conversation, configure the model, hear streamed responses, and follow the live transcript directly in the playground.</p>
+<h2><strong>Available Now</strong></h2>
+<p>Real-time voice-to-voice is now available in Backboard.</p>
+<p><strong>Explore the documentation →</strong><a href="https://docs.backboard.io/"><strong> docs.backboard.io</strong></a></p>
+<p><strong>Try it in the Playground →</strong><a href="https://app.backboard.io/"><strong> app.backboard.io</strong></a></p>
+      </article>
+      <nav class="article-foot"><a class="link-chev" href="/backboard-v14-preview/blog/#changelog">All changelog</a></nav>
+    </main>
+    <footer id="footer">
+      <div class="foot">
+        <div class="foot-brand">
+          <img data-emblem alt="Backboard" width="130" height="16" />
+          <span>Ottawa, Canada</span>
+        </div>
+        <nav class="foot-links" aria-label="Footer">
+          <a href="https://trust.backboard.io/">Trust Center</a>
+          <a href="/backboard-v14-preview/trust/">Security</a>
+          <a href="/backboard-v14-preview/privacy/">Privacy</a>
+          <a href="/backboard-v14-preview/terms/">Terms</a>
+          <a href="https://status.backboard.io/status/s">Status</a>
+          <a href="/backboard-v14-preview/careers/">Careers</a>
+          <a href="/backboard-v14-preview/contact/">Contact</a>
+          <a href="https://github.com/backboard-io">GitHub</a>
+          <a href="https://x.com/BackboardIO">X</a>
+          <a href="https://www.linkedin.com/company/backboard-io">LinkedIn</a>
+        </nav>
+      </div>
+    </footer>
+
+  </body>
+</html>
